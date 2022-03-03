@@ -1,43 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campo Minato</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Campo minato</title>
 
-    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <!--NAV-->
-    <div class="nav">
-        <div class="nav1">
-            <h1>Campo Minato</h1>
-        </div>
-    
-        <div class="nav2">
-            <label>
-                Difficoltà:
-            </label>
-                <select>
-                    <option value="">Facile</option>
-                    <option value="">Medio</option>
-                    <option value="">Difficile</option>
-                </select>
-            <button class="button-play">Play</button>
-        </div>
-    </div>
-    
-    <!--GRIGLIA-->
-    <div class="container">
-        <div class="cont-square"></div>
-    </div>
-    
-    <footer>
-        Made with &hearts; by <a href="#">Boolean</a>
-    </footer>
+	<div>
+		<header>
+			<div class="container">
+				<h1>Campo minato</h1>
 
-    <script src="main.js"></script>
+				<label for="level">Livello:</label>
+				<select name="level" id="level">
+					<option value="0">Facile</option>
+					<option value="1">Medio</option>
+					<option value="2">Difficile</option>
+				</select>
+
+				<button id="play">Gioca</button>
+			</div>
+		</header>
+	</div>
+
+	<main>
+		<div class="grid">
+			<h2>Questo gioco è una simulazione di campominato semplificato</h2>
+		</div>
+	</main>
+
+	<footer>
+		<div class="container">
+			Made in &hearts; by Boolean
+		</div>
+	</footer>
+
+	<script src="main.js"></script>
 </body>
 </html>

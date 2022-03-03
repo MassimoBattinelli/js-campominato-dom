@@ -1,52 +1,76 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-.nav{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+.container {
+	max-width: 900px;
+	margin: 0 auto;
 }
 
-button{
-    width: 80px;
+body {
+	background-color: turquoise;
 }
 
-select{
-    width: 150px;
+header {
+	height: 5rem;
+	background-color: white;
 }
 
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 100px;
-    margin-bottom: 70px;
+header .container {
+	display: flex;
+	align-items: center;
+	height: 100%;
 }
 
-.cont-square {
-    width: 600px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+header h1 {
+	margin-right: auto;
 }
 
-.box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: calc((100% / 10) - 5px);
-    height: 50px;
-    margin: 1px;
+main {
+	display: flex;
+	height: calc(100vh - 8rem);
 }
 
-.colorcells {
-    background-color: #7FFFD4;
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	width: 700px;
+	height: 600px;
+	border: 1px solid black;
+}
+
+.grid h2 {
+	text-align: center;
+}
+
+.cell {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px black solid;
+	cursor: pointer;
+}
+
+.cell.selected {
+	background-color: yellow;
 }
 
 footer {
-    display: flex;
-    margin-left: 15rem;
+	height: 3rem;
+	background-color: white;
+}
+
+footer .container {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+.bombs{
+    background-color: red;
 }
